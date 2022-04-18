@@ -1,0 +1,11 @@
+.header {
+    height: 80px;
+    background-color: #84ebff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}

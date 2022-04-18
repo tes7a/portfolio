@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.contactsBlock{
+    min-height: 100vh;
+    background-color: #056ef1;
+}
+
+.contactsContainer{
+    border: 1px solid #000000;
+    height: 25%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactsFrom{
+    border: 1px solid #000000;
+    margin: 0 auto;
+    padding: 8px 8px 8px 9px;
+    height: 150px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    background-color: #cccccc;
+    font-size: 30px;
+    margin: 15px;
+    font-style: italic;
+    font-family: cursive;
+}
