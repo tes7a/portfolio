@@ -2,26 +2,55 @@
     box-sizing: border-box;
 }
 
-.myWorkBlock{
-    background-color: #be89f8;
+.myWorkBlock {
+    background-color: #fff;
+    padding: 100px 0;
 }
 
-.myWorkContainer{
+.myWorkContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.myWorkTitle{
-    background-color: #cccccc;
+.myWorkTitle {
+    margin-bottom: 20px;
 }
 
-.myWorks{
+.myWorkTitle h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    letter-spacing: -0.04em;
+    line-height: 1;
+
+    text-transform: capitalize;
+    position: relative;
+    margin: 0 0 8px;
+    color: #022144;
+}
+
+.myWorkTitle::before {
+    content: "";
+
+    width: 55px;
+    height: 1px;
+    background: #dc3545;
+
+    position: absolute;
+    bottom: -455px;
+    left: 48%;
+    /*transform: translate(50%, -50%);*/
+}
+
+.myWorks {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 @media screen and (min-width: 629px) {

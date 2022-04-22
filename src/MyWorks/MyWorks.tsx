@@ -7,7 +7,9 @@ export const MyWorks = () => {
     return(
         <div className={s.myWorkBlock}>
             <div className={`${sContainer.container} ${s.myWorkContainer}`}>
-                <h2 className={s.myWorkTitle}>My Works</h2>
+                <div className={s.myWorkTitle}>
+                    <h2>My Works</h2>
+                </div>
                 <div className={s.myWorks}>
                     <MyWork title={'SocialNetwork'}
                             description={'not done not donenot donenot donenot donenot donenot donenot done'}/>
