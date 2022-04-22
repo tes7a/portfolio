@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     height: 80px;
     background-color: #84ebff;
@@ -6,6 +10,3 @@
     align-items: center;
 }
 
-* {
-    box-sizing: border-box;
-}

@@ -20,12 +20,12 @@
     border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 629px) {
+@media screen and (min-width: 629px) {
     .myWorks {
-        justify-content: center;
+        justify-content: space-between;
     }
 }

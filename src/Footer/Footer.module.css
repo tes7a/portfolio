@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .footerBlock{
     background-color: #fa3498;
 }
@@ -30,6 +34,3 @@
     flex-wrap: wrap;
 }
 
-* {
-    box-sizing: border-box;
-}

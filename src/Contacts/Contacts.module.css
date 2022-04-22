@@ -3,7 +3,6 @@
 }
 
 .contactsBlock{
-    min-height: 100vh;
     background-color: #056ef1;
 }
 
@@ -20,10 +19,10 @@
 
 .contactsFrom{
     border: 1px solid #000000;
-    margin: 0 auto;
+    margin: 25px 0 25px 0;
     padding: 8px 8px 8px 9px;
-    height: 150px;
-    width: 280px;
+    height: 180px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,4 +34,11 @@
     margin: 15px;
     font-style: italic;
     font-family: cursive;
+}
+
+@media screen and (max-width: 625px) {
+    .contactsFrom {
+        height: 180px;
+        width: 100%;
+    }
 }
