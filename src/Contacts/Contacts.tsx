@@ -7,10 +7,10 @@ export const Contacts = () => {
             <div className={s.contactsContainer}>
                 <h2 className={s.title}>Contacts</h2>
                 <form className={s.contactsFrom}>
-                    <input/>
-                    <input/>
+                    <input type={"text"}/>
+                    <input type={"text"}/>
                     <textarea/>
-                    <button>Submit</button>
+                    <button type={"submit"}>Submit</button>
                 </form>
             </div>
         </div>

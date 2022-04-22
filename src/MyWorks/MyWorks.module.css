@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 .myWorkBlock{
-    min-height: 100vh;
     background-color: #be89f8;
 }
 
@@ -21,6 +24,8 @@
     flex-wrap: wrap;
 }
 
-* {
-    box-sizing: border-box;
+@media screen and (max-width: 629px) {
+    .myWorks {
+        justify-content: center;
+    }
 }
