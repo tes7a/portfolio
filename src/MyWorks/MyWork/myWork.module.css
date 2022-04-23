@@ -1,22 +1,58 @@
 .myWork{
-    width: 250px;
-    background-color: #cccccc;
+    width: 450px;
+    background-color: #fff;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
+.viewBtn {
+    background-color: red;
+    padding: 10px 20px;
+
+}
+
 .icon{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 450px;
+
     background-color: #785959;
+
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projectInfo {
+    border: 1px solid;
+    background-color: #fff;
+    padding: 25px 20px;
 }
 
 .description{
-    border: 1px solid;
-    background-color: #f4f8ff;
+    color: #808899;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.workTitle{
+    font-weight: 600;
+    font-size: 17px;
+
+    margin: 0 0 10px;
+    line-height: 1.4;
+    color: #022144;
+
+    letter-spacing: -0.01em;
 }

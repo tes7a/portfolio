@@ -3,7 +3,7 @@
 }
 
 .footerBlock{
-    background-color: #fa3498;
+    background-color: #fff;
 }
 
 .footerContainer{
@@ -11,6 +11,7 @@
     height: 25%;
     width: 80%;
     margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -19,16 +20,10 @@
     align-content: center;
 }
 
-.title {
-    background-color: #cccccc;
-    font-size: 30px;
-    margin: 15px;
-    font-style: italic;
-    font-family: cursive;
-}
-
 .contacts {
+    margin-top: 30px;
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

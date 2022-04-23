@@ -13,43 +13,15 @@
     justify-content: flex-start;
 }
 
-.myWorkTitle {
-    margin-bottom: 20px;
-}
-
-.myWorkTitle h2 {
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-
-    letter-spacing: -0.04em;
-    line-height: 1;
-
-    text-transform: capitalize;
-    position: relative;
-    margin: 0 0 8px;
-    color: #022144;
-}
-
-.myWorkTitle::before {
-    content: "";
-
-    width: 55px;
-    height: 1px;
-    background: #dc3545;
-
-    position: absolute;
-    bottom: -455px;
-    left: 48%;
-    /*transform: translate(50%, -50%);*/
-}
-
 .myWorks {
     border: 1px solid;
-    width: 100%;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
+
+    width: 100%;
     margin-top: 30px;
 }
 
