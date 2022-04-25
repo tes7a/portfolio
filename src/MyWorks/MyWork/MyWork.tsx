@@ -1,5 +1,5 @@
 import React from "react";
-import s from './myWork.module.css'
+import s from './myWork.module.scss'
 
 type MyWorkProps = {
     title: string,

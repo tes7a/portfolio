@@ -1,9 +1,10 @@
-.title {
-    margin-bottom: 20px;
-    position: relative;
-}
+@import "./src/common/Styles/sass/variables";
 
-.title h2 {
+.title {
+  margin-bottom: 20px;
+  position: relative;
+
+  h2 {
     font-size: 30px;
     font-weight: 600;
 
@@ -13,18 +14,19 @@
     text-transform: capitalize;
 
     margin: 0 0 8px;
-    color: #022144;
-}
+    color: $textColor;
+  }
 
-.title::before {
+  &::before {
     content: "";
 
     width: 55px;
     height: 1px;
-    background: #dc3545;
+    background: $primaryColor;
 
     position: absolute;
     bottom: -20px;
     left: 50%;
     transform: translate(-50%, 50%);
+  }
 }

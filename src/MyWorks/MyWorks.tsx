@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./MyWorks.module.css"
+import s from "./MyWorks.module.scss"
 import sContainer from "../common/Styles/Container.module.css";
 import {MyWork} from "./MyWork/MyWork";
 import {Title} from "../common/components/title/Title";
@@ -20,7 +20,7 @@ export const MyWorks = () => {
                 <Title title={"My Works"}/>
                 <div className={s.myWorks}>
                     <MyWork style={socialNetwork}
-                            title={'SocialNetwork'}
+                            title={'Social Network'}
                             description={
                                 'not donenot donenot donenot donenot donenot donenot donenot donenot donenot done'
                             }/>
