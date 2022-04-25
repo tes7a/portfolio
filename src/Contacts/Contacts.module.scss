@@ -1,12 +1,11 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.contactsBlock{
-    background-color: #056ef1;
-}
+.contactsBlock {
+  background-color: #056ef1;
 
-.contactsContainer{
+  .contactsContainer {
     border: 1px solid #000000;
     height: 25%;
     width: 80%;
@@ -15,9 +14,17 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
+  }
 
-.contactsFrom{
+  .title {
+    background-color: #cccccc;
+    font-size: 30px;
+    margin: 15px;
+    font-style: italic;
+    font-family: cursive;
+  }
+
+  .contactsFrom {
     border: 1px solid #000000;
     margin: 25px 0 25px 0;
     padding: 8px 8px 8px 9px;
@@ -26,19 +33,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.title {
-    background-color: #cccccc;
-    font-size: 30px;
-    margin: 15px;
-    font-style: italic;
-    font-family: cursive;
-}
-
-@media screen and (max-width: 625px) {
-    .contactsFrom {
-        height: 180px;
-        width: 100%;
+    @media screen and (max-width: 625px) {
+      height: 180px;
+      width: 100%;
     }
+  }
 }
+
+

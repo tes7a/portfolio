@@ -23,6 +23,9 @@
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
+    @media screen and (max-width: 568px){
+      width: 100%;
+    }
 
     &::before {
       position: absolute;

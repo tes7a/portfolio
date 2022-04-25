@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./MyWorks.module.scss"
-import sContainer from "../common/Styles/Container.module.css";
+import sContainer from "../common/Styles/Container.module.scss";
 import {MyWork} from "./MyWork/MyWork";
 import {Title} from "../common/components/title/Title";
 import todoIcon from "./../assets/image/todolist.jpg";
