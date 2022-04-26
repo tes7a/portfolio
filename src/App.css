@@ -21,3 +21,31 @@ h3, h4 {
     color: #022144;
     letter-spacing: -0.01em;
 }
+
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #808899;
+    font-weight: 400;
+    position: relative;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #dc3545;
+}
+
+::selection {
+    background-color: #dc3545;
+    color: #fff;
+}

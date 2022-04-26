@@ -1,6 +1,8 @@
+@import "src/common/Styles/sass/variables";
+
 .mainBlock {
   min-height: 100vh;
-  background-color: #fff;
+  background-color: $bgColor;
   padding-top: 200px;
 
   .text {
@@ -8,18 +10,38 @@
     position: relative;
 
 
-    background-color: #f4f8ff;
+    background-color: $bgColor;
 
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 
+    h4 {
+      font-size: 15px;
+      color: $primaryColor;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 42px;
+      text-transform: capitalize;
+      color: #022144;
+      margin: 0 0 8px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+
+      span {
+        color: $primaryColor;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+
     .defaultBtn {
       text-decoration: none;
       font-family: "Poppins", sans-serif;
       letter-spacing: 0;
-      background-color: #dc3545;
-      color: #fff;
+      background-color: $primaryColor;
+      color: $bgColor;
       line-height: 45px;
       display: inline-block;
       padding: 0 25px;
@@ -36,6 +58,10 @@
       -ms-transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       -o-transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    p {
+      margin: 20px 0;
+      font-size: 15px;
     }
   }
 

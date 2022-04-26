@@ -7,10 +7,13 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={sContainer.container}>
                 <div className={s.text}>
-                    <h4>About Me</h4>
-                    <span>Hi There</span>
-                    <h2>I am Dudkin Konstantine</h2>
-                    <span>Frontend Developer</span>
+                    <h4 className={s.selectionH4}>
+                        About Me
+                    </h4>
+                    <h2>
+                        I am Dudkin Konstantine <span>Frontend Developer</span>
+                    </h2>
+
                     <p>
                         I love to work in User Experience & User Interface designing.
                         Because I love to solve the design problem and find easy and better solutions to solve it.
