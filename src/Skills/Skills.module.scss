@@ -1,14 +1,17 @@
 .skillsBlock {
-    background-color: #fff;
-}
+  background-color: #fff;
 
-.skillsContainer {
+  .skillsContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-}
 
-.skills {
+      p{
+          margin: 15px 0 0px;
+      }
+  }
+
+  .skills {
     border: 1px solid;
 
     display: flex;
@@ -17,10 +20,8 @@
 
     width: 100%;
     margin-top: 30px;
-}
-
-@media screen and (min-width: 629px) {
-    .skills {
-        justify-content: space-between;
+    @media screen and (min-width: 629px) {
+      justify-content: space-between;
     }
+  }
 }

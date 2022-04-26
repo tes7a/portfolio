@@ -1,6 +1,7 @@
 import React from "react";
 import s from './Main.module.scss'
 import sContainer from '../common/Styles/Container.module.scss'
+import manPhoto from '../assets/image/photo_2021-10-09_16-12-59-removebg.png'
 
 export const Main = () => {
     return (
@@ -22,7 +23,7 @@ export const Main = () => {
                     <a href={"#"} className={s.defaultBtn}>Download CV</a>
                 </div>
                 <div className={s.photo}>
-                    photo
+                    <img className={s.manPhoto} src={manPhoto} alt="photo"/>
                 </div>
             </div>
         </div>

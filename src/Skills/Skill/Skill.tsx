@@ -1,15 +1,18 @@
 import React from "react";
-import s from './Skill.module.css'
+import s from './Skill.module.scss'
 
 type SkillType = {
     title: string,
     description: string,
+    img: string,
 }
 
-export const Skill: React.FC<SkillType> = ({title, description}) => {
+export const Skill: React.FC<SkillType> = ({title, description, img}) => {
     return (
         <div className={s.skill}>
-        <div className={s.icon}></div>
+        <div className={s.iconBlock}>
+            <img className={s.icon} src={img} alt="img"/>
+        </div>
         <h3>{title}</h3>
         <span className={s.description}>
             {description}
