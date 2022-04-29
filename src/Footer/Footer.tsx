@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Footer.module.css'
+import s from './Footer.module.scss'
 import {FooterContacts} from "./FooterContacts/FooterContacts";
 import {Title} from "../common/components/title/Title";
 

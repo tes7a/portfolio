@@ -1,9 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+@import "src/common/Styles/sass/variables";
+@import "src/common/Styles/sass/mixins";
 
 .contactsBlock {
-  background-color: #056ef1;
+  background-color: $bgSecondColor;
+  padding: 100px 0 100px;
 
   .contactsContainer {
     border: 1px solid #000000;
@@ -14,14 +14,6 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  }
-
-  .title {
-    background-color: #cccccc;
-    font-size: 30px;
-    margin: 15px;
-    font-style: italic;
-    font-family: cursive;
   }
 
   .contactsFrom {
@@ -36,6 +28,10 @@
     @media screen and (max-width: 625px) {
       height: 180px;
       width: 100%;
+    }
+
+    .submitBtn {
+      @include btnStyle;
     }
   }
 }

@@ -23,8 +23,11 @@
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
-    @media screen and (max-width: 568px){
+    @media screen and (max-width: 568px) {
       width: 100%;
+    }
+    .viewBtn {
+      @include btnStyle;
     }
 
     &::before {
@@ -36,14 +39,6 @@
       left: 0;
       right: 0;
       opacity: 0.4;
-    }
-
-    .viewBtn {
-      background-color: $primaryColor;
-      padding: 10px 20px;
-      position: relative;
-      z-index: 1;
-      text-decoration: none;
     }
   }
 

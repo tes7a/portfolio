@@ -1,0 +1,29 @@
+@import 'src/common/Styles/sass/variables';
+@import "src/common/Styles/sass/mixins";
+
+.remoteWorkBlock {
+  background-color: $bgSecondColor;
+  padding: 100px 0 100px;
+
+  .remoteWorkContainer {
+    border: 1px solid #000000;
+    height: 25%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    .btnHairMe {
+      @include btnStyle;
+      margin-top: 40px;
+    }
+  }
+}
+
+
+
+

@@ -15,11 +15,11 @@ export function App() {
                 <Header/>
             </header>
             <body>
-            <Main/>
-            <Skills/>
-            <MyWorks/>
-            <RemoteWork/>
-            <Contacts/>
+                <Main/>
+                <Skills/>
+                <MyWorks/>
+                <RemoteWork/>
+                <Contacts/>
             </body>
             <footer>
                 <Footer/>

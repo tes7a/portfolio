@@ -1,12 +1,6 @@
-@mixin textStyle($weight, $size, $color, $height) {
-  font-family: 'Poppins', sans-serif;
-  font-weight: $weight;
-  font-size: $size;
-  color: $color;
-  line-height: $height;
-}
+@import "src/common/Styles/sass/variables";
 
-@mixin btnStyle {
+.defaultBtn {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0;

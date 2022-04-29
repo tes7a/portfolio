@@ -12,7 +12,7 @@ type MyWorkProps = {
 export const MyWork: React.FC<MyWorkProps> = ({title, description, style}) => {
     return <div className={s.myWork}>
         <div style={style} className={s.icon}>
-            <a className={s.viewBtn} href={'/#'}>look</a>
+            <a href={"/#"} className={s.viewBtn}>view</a>
         </div>
         <div className={s.projectInfo}>
             <h3 className={s.workTitle}>{title}</h3>

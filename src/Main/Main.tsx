@@ -20,7 +20,7 @@ export const Main = () => {
                         Because I love to solve the design problem and find easy and better solutions to solve it.
                         I always try my best to make good user interface with the best user experience.
                     </p>
-                    <a href={"#"} className={s.defaultBtn}>Download CV</a>
+                    <a href={"/#"} className={s.btnCV}>Download CV</a>
                 </div>
                 <div className={s.photo}>
                     <img className={s.manPhoto} src={manPhoto} alt="photo"/>
