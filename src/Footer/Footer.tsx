@@ -1,8 +1,5 @@
 import React from "react";
 import s from './Footer.module.scss'
-import {FooterContacts} from "./FooterContacts/FooterContacts";
-import {Title} from "../common/components/title/Title";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Footer = () => {
     return (
@@ -13,7 +10,7 @@ export const Footer = () => {
                 <div className={s.contacts}>
                     <ul className={s.footerSocial}>
                         <li><a href="/#">
-                            <FontAwesomeIcon icon="fa-brands fa-telegram" />
+                            <i className={`fa-brands fa-facebook ${s.facebookIcon}` }></i>
                         </a></li>
                         <li><a href="/#">
                             <i></i>
