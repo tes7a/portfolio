@@ -9,7 +9,7 @@
   margin-left: auto;
 
   .footerContainer {
-    border: 1px solid #fff;
+    //border: 1px solid $bgColor;
     height: 25%;
     width: 82%;
     margin: 0 auto;
@@ -21,50 +21,52 @@
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
 
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+
     .description {
       font-size: 12px;
       color: #ddd;
       text-transform: uppercase;
       text-align: center !important;
+      margin: 8px 0 8px;
 
       @media screen and (min-width: 992px) {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-
       }
     }
 
     .footerTitle {
-      color: #fff;
+      color: $bgColor;
       font-size: 30px;
       font-weight: 600;
       letter-spacing: -0.04em;
       line-height: 1;
       text-transform: capitalize;
-      margin: 0 0 8px;
+      margin: 8px 0 8px;
 
       @media screen and (min-width: 992px) {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-
       }
 
       &:first-letter {
-        color: #dc3545;
+        color: $primaryColor;
       }
     }
 
     .contacts {
-      margin-top: 30px;
       width: 100%;
-
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 8px 0 8px;
 
       @media screen and (min-width: 992px) {
         -webkit-box-flex: 0;
@@ -74,12 +76,16 @@
       }
 
       .footerSocial {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
 
-        .facebookIcon {
-          color: #fff
+        list-style: none;
+
+        .socialsIcons {
+          color: $bgColor;
+          &:hover {
+            color: $primaryColor;
+          }
         }
       }
     }

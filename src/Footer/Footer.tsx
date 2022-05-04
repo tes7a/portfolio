@@ -10,16 +10,19 @@ export const Footer = () => {
                 <div className={s.contacts}>
                     <ul className={s.footerSocial}>
                         <li><a href="/#">
-                            <i className={`fa-brands fa-facebook ${s.facebookIcon}` }></i>
+                            <i className={`fa-brands fa-facebook ${s.socialsIcons}`}></i>
                         </a></li>
                         <li><a href="/#">
-                            <i></i>
+                            <i className={`fa-brands fa-instagram ${s.socialsIcons}`}></i>
                         </a></li>
                         <li><a href="/#">
-                            <i></i>
+                            <i className={`fa-brands fa-telegram ${s.socialsIcons}`}></i>
                         </a></li>
                         <li><a href="/#">
-                            <i></i>
+                            <i className={`fa-brands fa-linkedin ${s.socialsIcons}`}></i>
+                        </a></li>
+                        <li><a href="/#">
+                            <i className={`fa-solid fa-envelope ${s.socialsIcons}`}></i>
                         </a></li>
                     </ul>
                 </div>
