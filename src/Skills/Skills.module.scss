@@ -1,5 +1,7 @@
+@import "src/common/Styles/sass/variables";
+
 .skillsBlock {
-  background-color: #fff;
+  background-color: $bgSecondColor;
 
   .skillsContainer {
     align-items: center;
@@ -7,7 +9,7 @@
     justify-content: flex-start;
 
       p{
-          margin: 15px 0 0px;
+          margin: 15px 0 0;
       }
   }
 

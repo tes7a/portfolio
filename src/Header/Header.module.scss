@@ -1,0 +1,25 @@
+@import "src/common/Styles/sass/variables";
+
+
+.header {
+  height: 80px;
+  background-color: #84ebff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .headerTitle {
+    color: $bgColor;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    text-transform: capitalize;
+    margin: 8px 0 8px;
+
+    &:first-letter {
+      color: $primaryColor;
+    }
+  }
+}
+

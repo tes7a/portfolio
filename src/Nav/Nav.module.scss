@@ -1,0 +1,52 @@
+@import "src/common/Styles/sass/variables";
+@import "src/common/Styles/sass/mixins.scss";
+
+.nav {
+  border: 1px solid black;
+  width: 505px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: block;
+    vertical-align: middle;
+    letter-spacing: 0;
+    position: relative;
+    padding: 0;
+    z-index: 1;
+    @include textStyle(600, 15px, $bgColor, 70px);
+
+    &:nth-child(1) {
+      color: $primaryColor;
+    }
+
+    &::before {
+      background-color: #dc3545;
+      top: 50%;
+      margin-top: -1px;
+      content: "";
+      height: 3px;
+      right: 0;
+      position: absolute;
+      -webkit-transition: all .3s ease 0s;
+      -o-transition: all .3s ease 0s;
+      transition: all .3s ease 0s;
+      width: 0;
+    }
+
+    &:hover {
+      color: #dc3545;
+    }
+
+    &:hover::before {
+      width: 100%;
+      left: 0;
+      right: auto
+    }
+
+    a:focus:active {
+      background: none;
+      color: #dc3545;
+    }
+  }
+}
