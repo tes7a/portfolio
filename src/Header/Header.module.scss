@@ -1,8 +1,10 @@
 @import "src/common/Styles/sass/variables";
+@import "src/common/Styles/sass/mixins";
 
 .background {
-  min-height: 600px;
+  position: relative;
   width: 100%;
+  height: 650px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,18 +57,83 @@
       }
     }
   }
+
+  .nameSurnameBlock {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center !important;
+
+    h1 {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 62px;
+      font-size: 41px;
+      margin: 0 0 20px;
+      letter-spacing: -1.5px;
+    }
+
+    span {
+      color: #dc3545;
+      font-family: "Poppins", sans-serif;
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 62px;
+      font-size: 41px;
+      margin: 0 0 20px;
+      letter-spacing: -1.5px;
+    }
+
+    ul li {
+      display: inline-block;
+    }
+
+    ul li i {
+      color: #fff;
+      display: block;
+      margin: 0 10px;
+    }
+
+    ul li i:hover {color: #dc3545;}
+  }
+
   .imgContainer {
     display: flex;
-    align-items: baseline;
     justify-content: space-around;
-    padding-top: 180px;
+    padding-top: 33px;
+
 
     img {
-      position: relative;
       height: 97px;
       width: 97px;
     }
+
+    .eatBlock {
+      @include headerSvgStyle("eat();")
+    }
+
+    .sleepBlock {
+      @include headerSvgStyle("sleep();")
+    }
+
+    .codeBlock {
+      @include headerSvgStyle("code();")
+    }
+
+    .repeatBlock {
+      @include headerSvgStyle("repeat();")
+    }
   }
+
 
   .headerSticky {
     background-color: #fff;
