@@ -7,6 +7,19 @@
   display: flex;
   justify-content: space-between;
 
+  //width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 8px 0 8px;
+
+  @media screen and (min-width: 992px) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
   a {
     display: block;
     vertical-align: middle;
@@ -48,5 +61,11 @@
       background: none;
       color: #dc3545;
     }
+  }
+}
+
+.navSticky {
+  a {
+    color: $textColor;
   }
 }
