@@ -5,7 +5,8 @@ import eat from "../assets/image/restaurant.svg";
 import sleep from "../assets/image/sleep.svg";
 import code from "../assets/image/programming-code-signs.svg";
 import repeat from "../assets/image/repeat.svg";
-import Particles from "react-particles-js";
+import {ParticleComponent} from "../common/components/tsparticle/ParticleComponent";
+import ReactTypingEffect from 'react-typing-effect';
 
 export const Header = () => {
     const [scroll, setScroll] = useState(false);
@@ -24,6 +25,7 @@ export const Header = () => {
     }, [scroll]);
 
     return (<div className={s.background}>
+        <ParticleComponent/>
         <div className={scroll ? `${s.header} ${s.headerSticky}` : s.header}>
             <div className={s.headerContainer}>
                 <h2 className={scroll ? `${s.headerTitleSticky} ${s.headerTitle}` : s.headerTitle}>Konstantin</h2>
@@ -32,6 +34,7 @@ export const Header = () => {
         </div>
         <div className={s.nameSurnameBlock}>
             <h1>Konstantine <span>Dudkin</span></h1>
+            <ReactTypingEffect eraseDelay={3000} speed={300} className={s.typingEffect} text={"Frontend Developer"}/>
             <ul className={s.headerSocial}>
                 <li><a href="/#">
                     <i className={`fa-brands fa-facebook ${s.socialsIcons}`}></i>

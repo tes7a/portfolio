@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
 
-  //width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -25,7 +24,7 @@
     vertical-align: middle;
     letter-spacing: 0;
     position: relative;
-    padding: 0;
+    padding: 0 10px;
     z-index: 1;
     @include textStyle(600, 15px, $bgColor, 70px);
 

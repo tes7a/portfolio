@@ -5,10 +5,21 @@
   position: relative;
   width: 100%;
   height: 650px;
+  background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url('../assets/image/city.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #111;
+  background-color: rgba(0,0,0,0.5);
+
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
 
   .header {
     background-color: transparent;
@@ -71,6 +82,14 @@
     margin-left: auto;
     text-align: center !important;
 
+    .typingEffect {
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+      line-height: 62px;
+      font-size: 25px;
+    }
+
     h1 {
       color: #fff;
       font-family: "Poppins", sans-serif;
@@ -109,7 +128,7 @@
   .imgContainer {
     display: flex;
     justify-content: space-around;
-    padding-top: 33px;
+    padding-top: 90px;
 
 
     img {
