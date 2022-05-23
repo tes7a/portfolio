@@ -2,7 +2,6 @@
 @import "src/common/Styles/sass/mixins.scss";
 
 .nav {
-  border: 1px solid black;
   width: 505px;
   display: flex;
   justify-content: space-between;
@@ -13,12 +12,11 @@
   margin: 8px 0 8px;
 
   @media screen and (min-width: 992px) {
+    flex-wrap: nowrap;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
   }
 
+  //мой код
   a {
     display: block;
     vertical-align: middle;
@@ -68,3 +66,5 @@
     color: $textColor;
   }
 }
+
+

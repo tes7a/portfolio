@@ -128,12 +128,15 @@
   .imgContainer {
     display: flex;
     justify-content: space-around;
-    padding-top: 90px;
+    padding: 66px 27px 0 18px;
+    object-fit: cover;
+    gap: 27px;
 
 
     img {
-      height: 97px;
-      width: 97px;
+      height: 100%;
+      width: 100%;
+      max-width: 80px;
     }
 
     .eatBlock {
