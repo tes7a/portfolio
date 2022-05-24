@@ -16,7 +16,10 @@
     -webkit-box-flex: 0;
   }
 
-  //мой код
+  .linkActive {
+    color: $primaryColor;
+  }
+
   a {
     display: block;
     vertical-align: middle;
@@ -25,10 +28,6 @@
     padding: 0 10px;
     z-index: 1;
     @include textStyle(600, 15px, $bgColor, 70px);
-
-    &:nth-child(1) {
-      color: $primaryColor;
-    }
 
     &::before {
       background-color: #dc3545;

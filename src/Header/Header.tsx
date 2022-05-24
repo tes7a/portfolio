@@ -7,6 +7,7 @@ import code from "../assets/image/programming-code-signs.svg";
 import repeat from "../assets/image/repeat.svg";
 import {ParticleComponent} from "../common/components/tsparticle/ParticleComponent";
 import ReactTypingEffect from 'react-typing-effect';
+import {BurgerMenu} from "../Nav/BurgerMenu/BurgerMenu";
 
 export const Header = () => {
     const [scroll, setScroll] = useState(false);
@@ -29,7 +30,8 @@ export const Header = () => {
         <div className={scroll ? `${s.header} ${s.headerSticky}` : s.header}>
             <div className={s.headerContainer}>
                 <h2 className={scroll ? `${s.headerTitleSticky} ${s.headerTitle}` : s.headerTitle}>Konstantin</h2>
-                <Nav/>
+                {/*<Nav/>*/}
+                <BurgerMenu/>
             </div>
         </div>
         <div className={s.nameSurnameBlock}>

@@ -3,11 +3,9 @@ import "./BurgerMenu.scss";
 
 export const BurgerMenu = () => {
     const [toggle, setToggle] = useState(false);
-    const [bgToggle, setBgToggle] = useState(false);
 
     const onChangeBurger = () => {
         setToggle(!toggle);
-        setBgToggle(!bgToggle);
     }
 
     return (
@@ -18,7 +16,7 @@ export const BurgerMenu = () => {
                     <div className={"bar"}></div>
                     <div className={'bar'}></div>
                 </div>
-                <nav className={'nav'}>
+                <nav className={toggle? "change" : "nav"}>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -27,7 +25,6 @@ export const BurgerMenu = () => {
                     </ul>
                 </nav>
             </div>
-            <div className={""}></div>
         </>
     )
 }
