@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import s from './Nav.module.scss'
-import {BurgerMenu} from "./BurgerMenu/BurgerMenu";
 
 
 export const Nav = () => {
@@ -20,11 +19,10 @@ export const Nav = () => {
     }, [scroll]);
 
     return (<div className={scroll ? `${s.navSticky} ${s.nav}`: s.nav}>
-        {/*<a className={s.linkActive} href={''}>Main</a>*/}
-        {/*<a href={''}>Skills</a>*/}
-        {/*<a href={''}>Projects</a>*/}
-        {/*<a href={''}>Remote Work</a>*/}
-        {/*<a href={''}>Contacts</a>*/}
-
+        <a className={s.linkActive} href={''}>Main</a>
+        <a href={''}>Skills</a>
+        <a href={''}>Projects</a>
+        <a href={''}>Remote Work</a>
+        <a href={''}>Contacts</a>
     </div>)
 }

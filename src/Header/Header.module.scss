@@ -63,6 +63,20 @@
         }
       }
 
+      .nav {
+        display: none;
+        @media screen and (min-width: 1200px) {
+          display: block;
+        }
+      }
+
+      .burger {
+          display: block;
+        @media screen and (min-width: 1200px) {
+          display: none;
+        }
+      }
+
       .headerTitleSticky {
         color: $textColor;
       }
