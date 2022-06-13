@@ -33,10 +33,14 @@ export const Contacts = () => {
                 </div>
                 <div className={s.blockFrom}>
                     <form className={s.contactsFrom}>
-                        <input type={"text"}/>
-                        <input type={"text"}/>
-                        <textarea/>
-                        <button type={"submit"} className={s.submitBtn}>Submit</button>
+                        <div className={s.blockForm__inputs}>
+                            <input placeholder={"Name"} type={"text"}/>
+                            <input placeholder={"Email"} type={"text"}/>
+                        </div>
+                        <textarea placeholder={"Message"}/>
+                        <div>
+                            <button type={"submit"} className={s.submitBtn}>Send Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
