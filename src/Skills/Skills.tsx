@@ -18,26 +18,28 @@ export const Skills = () => {
                     with the best user experience.
                 </p>
                 <div className={s.skills}>
-
                     <Skill svg={javaScriptSvg}
                            title={"JS"}
-                           description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, remaining i versions of Lorem Ipsum."}/>
+                           done={"60"}
+                           description={"Lorem Ipsum is simply dummy text of sions of Lorem Ipsum."}/>
                     <Skill svg={reactSvg}
                            title={"React"}
-                           description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, remaining i versions of Lorem Ipsum."}/>
+                           done={"60"}
+                           description={"Lorem Ipsum is simply du00s, remainin i versiof Lorem Ipsum."}/>
                     <Skill svg={cssSvg}
                            title={"CSS"}
-                           description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, remaining i versions of Lorem Ipsum."}
+                           done={"40"}
+                           description={"Lorem Ipsum is simplyhe, remaining i versions of Lorem Ipsum."}
                     />
                     <Skill svg={reduxSvg}
                            title={"Redux"}
-                           description={'"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, remaining i versions of Lorem Ipsum."'}
-
-                    /><
-                    Skill svg={htmlSvg}
+                           done={"40"}
+                           description={'"Lorem Ipsum ithe printitd ever since the 1500s, remaininversions of Lorem Ipsum."'}
+                    />
+                    <Skill svg={htmlSvg}
                           title={"HTML"}
-                          description={'"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, remaining i versions of Lorem Ipsum."'}
-
+                          done={"80"}
+                          description={'"Lorem Ipsum is simply dummy text  the 1500s, remaining i versions of Lorem Ipsum."'}
                 />
                 </div>
             </div>

@@ -2,11 +2,13 @@
 @import "src/common/Styles/sass/mixins";
 
 .remoteWorkBlock {
-  background-color: $bgSecondColor;
   padding: 100px 0 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/office.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .remoteWorkContainer {
-    border: 1px solid #000000;
     height: 25%;
     width: 80%;
     margin: 0 auto;
@@ -17,9 +19,48 @@
     align-items: center;
     align-content: center;
 
+    .remoteWorkBlockTitle {
+      position: relative;
+      padding: 15px 0 0 0;
+
+      font-size: 30px;
+      font-weight: 600;
+
+      letter-spacing: -0.04em;
+      line-height: 1;
+
+      text-transform: capitalize;
+
+      margin: 0 0 8px;
+      color: #ffff;
+
+
+      &::before {
+        content: "";
+
+        width: 55px;
+        height: 1px;
+        background: $primaryColor;
+
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+
+    .remoteWorkDescription {
+      text-align: center;
+      color: #ddd;
+      padding: 20px 40px;
+      margin-top: 10px;
+    }
+
     .btnHairMe {
       @include btnStyle;
       margin-top: 40px;
+      line-height: 40px;
+      padding: 0 20px;
     }
   }
 }

@@ -12,6 +12,10 @@ import {BurgerMenu} from "../BurgerMenu/BurgerMenu";
 export const Header = () => {
     const [scroll, setScroll] = useState(false);
 
+    const onStart = () => {
+        window.scrollTo(0, 0);
+    }
+
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 0) {
@@ -72,6 +76,9 @@ export const Header = () => {
             <div className={s.repeatBlock}>
                 <img src={repeat} alt={"img"}/>
             </div>
+        </div>
+        <div className={scroll ? s.scrollActive : s.scrollNone} onClick={onStart}>
+            <i className="fa-solid fa-arrow-up"></i>
         </div>
     </div>)
 }

@@ -2,9 +2,9 @@
 @import "src/common/Styles/sass/mixins";
 
 .mainBlock {
-  min-height: 100vh;
+  min-height: 100%;
   background-color: $bgColor;
-  padding-top: 80px;
+  position: relative;
 
   .text {
     max-width: 50%;
@@ -14,8 +14,7 @@
     background-color: $bgColor;
 
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px 15px;
 
     .btnCV {
       @include btnStyle;
@@ -51,14 +50,15 @@
   }
 
   .photo {
-    width: 430px;
-    background-color: $bgColor;
-    margin-top: 20px;
-
-    .manPhoto {
-      height: inherit;
-      width: inherit;
-    }
+    background-image: url("../assets/image/photo_2021-10-09_16-12-59-removebg.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 77%;
+    position: absolute;
+    width: 570px;
+    height: 667px;
+    right: 40px;
+    bottom: 0;
   }
 }
 

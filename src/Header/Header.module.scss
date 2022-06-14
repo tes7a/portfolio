@@ -150,7 +150,7 @@
     img {
       height: 100%;
       width: 100%;
-      max-width: 80px;
+      max-width: 61px;
     }
 
     .eatBlock {
@@ -179,6 +179,29 @@
     height: 70px;
     border-bottom: 0;
     padding: 0;
+  }
+
+  .scrollNone {
+    display: none;
+  }
+
+  .scrollActive {
+    cursor: pointer;
+    background-color: #dc3545;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+
+    &:hover {
+      background-color: #000000;
+    }
   }
 }
 
