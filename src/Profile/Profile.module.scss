@@ -1,10 +1,13 @@
 @import "src/common/Styles/sass/variables";
 @import "src/common/Styles/sass/mixins";
 
-.mainBlock {
+.main_block {
   min-height: 100%;
   background-color: $bgColor;
   position: relative;
+
+  border-bottom: 2px solid #eee;
+  padding: 100px 0;
 
   .text {
     max-width: 50%;
@@ -14,10 +17,10 @@
     background-color: $bgColor;
 
     min-height: 1px;
-    padding: 15px 15px;
 
-    .btnCV {
+    .btn_CV {
       @include btnStyle;
+
       margin-top: 90px;
       padding: 0 20px;
       line-height: 38px;
@@ -31,8 +34,10 @@
       font-size: 30px;
       line-height: 42px;
       text-transform: capitalize;
+
       color: $textColor;
       margin: 0 0 8px;
+
       font-weight: 600;
       letter-spacing: -0.04em;
 
@@ -54,6 +59,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 77%;
+
     position: absolute;
     width: 570px;
     height: 667px;

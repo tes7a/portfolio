@@ -2,10 +2,12 @@
 
 .skill {
   width: 250px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   margin: 0 0 15px 0;
 
   h3 {
@@ -13,7 +15,7 @@
     color: $textColor;
   }
 
-  .iconBlock {
+  .img_block {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,29 +25,48 @@
     margin-top: 18px;
     height: 60px;
     width: 60px;
-    background-color: #fff;
+
+    background-color: $bgColor;
     transform: rotate(45deg);
     margin-bottom: 40px;
 
-    .icon {
+    .img {
       transform: rotate(-45deg);
       height: 36px;
     }
   }
 
-  .progressBar {
+  .progress_bar {
     margin: 10px;
     width: 160px;
     height: 7px;
+
     border-radius: 3px;
     background-color: #ddd;
-    .progressBarDone {
+
+    .progress_bar_done {
       background-color: #dc3545;
+
       opacity: 0;
       height: 100%;
-      border-radius: 3px;
-      transition: 1s ease 0.3s;
       padding-top: 5px;
+      border-radius: 3px;
+
+      --colorBar:  #dc3545;
+      --time: 1s;
+      transform-origin: left top;
+      transform: scaleX(0);
+      animation: scale var(--time) forwards;
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      background-color: var(--colorBar);
+      transform: scaleX(1);
     }
   }
 

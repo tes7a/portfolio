@@ -1,25 +1,29 @@
 @import 'src/common/Styles/sass/variables';
 @import "src/common/Styles/sass/mixins";
 
-.remoteWorkBlock {
+.remote_work {
   padding: 100px 0 100px;
+
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/office.webp");
   background-position: center;
+
   background-size: cover;
   background-repeat: no-repeat;
 
-  .remoteWorkContainer {
+  .remote_work_container {
     height: 25%;
     width: 80%;
     margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+
     align-items: center;
     align-content: center;
 
-    .remoteWorkBlockTitle {
+    .remote_work_title {
       position: relative;
       padding: 15px 0 0 0;
 
@@ -32,7 +36,7 @@
       text-transform: capitalize;
 
       margin: 0 0 8px;
-      color: #ffff;
+      color: $bgColor;
 
 
       &::before {
@@ -49,15 +53,17 @@
       }
     }
 
-    .remoteWorkDescription {
+    .remote_work_description {
       text-align: center;
       color: #ddd;
+
       padding: 20px 40px;
       margin-top: 10px;
     }
 
-    .btnHairMe {
+    .btn_hair_me {
       @include btnStyle;
+
       margin-top: 40px;
       line-height: 40px;
       padding: 0 20px;

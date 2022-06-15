@@ -1,16 +1,18 @@
 @import "src/common/Styles/sass/variables";
-.myWorkBlock {
+.projects_block {
   background-color: $bgColor;
   padding: 100px 0;
 
-  .myWorkContainer {
+  .project_container {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
 
-    .myWorks {
-      border: 1px solid;
+    span {
+      margin: 15px 5px;
+    }
 
+    .projects {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;

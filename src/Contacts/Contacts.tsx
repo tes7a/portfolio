@@ -1,11 +1,11 @@
 import React from "react";
-import s from './Contacts.module.scss'
+import s from "./Contacts.module.scss";
 
 export const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
-            <div className={s.contactsContainer}>
-                <div className={s.contactsInformation}>
+        <div className={s.contacts}>
+            <div className={s.contacts_container}>
+                <div className={s.contacts_information}>
                     <h3>Contact Info :</h3>
                     <span>
                         I love to work in User Experience & User Interface designing. <br/>
@@ -31,15 +31,15 @@ export const Contacts = () => {
                         </ul>
                     </div>
                 </div>
-                <div className={s.blockFrom}>
-                    <form className={s.contactsFrom}>
+                <div className={s.block_from}>
+                    <form className={s.contacts_from}>
                         <div className={s.blockForm__inputs}>
                             <input placeholder={"Name"} type={"text"}/>
                             <input placeholder={"Email"} type={"text"}/>
                         </div>
                         <textarea placeholder={"Message"}/>
                         <div>
-                            <button type={"submit"} className={s.submitBtn}>Send Message</button>
+                            <button type={"submit"} className={s.submit_btn}>Send Message</button>
                         </div>
                     </form>
                 </div>

@@ -11,8 +11,8 @@ import htmlSvg from "../assets/image/html.svg";
 
 export const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
-            <div className={`${sContainer.container} ${s.skillsContainer}`}>
+        <div className={s.skills_block}>
+            <div className={`${sContainer.container} ${s.skills_container}`}>
                 <Title title={"Skills"}/>
                 <p>I always try my best to make good user interface
                     with the best user experience.

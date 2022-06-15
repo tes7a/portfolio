@@ -1,6 +1,6 @@
 @import 'src/common/Styles/sass/variables.scss';
 
-.footerBlock {
+.footer {
   background-color: #111;
   width: 100%;
   padding-right: 15px;
@@ -8,7 +8,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  .footerContainer {
+  .footer_container {
     height: 25%;
     width: 82%;
     margin: 0 auto;
@@ -39,7 +39,7 @@
       }
     }
 
-    .footerTitle {
+    .footer_title {
       color: $bgColor;
       font-size: 30px;
       font-weight: 600;
@@ -74,11 +74,11 @@
         max-width: 33.333333%;
       }
 
-      .footerSocial {
+      .footer_social {
         display: flex;
         justify-content: space-evenly;
 
-        .socialsIcons {
+        .socials_icons {
           color: $bgColor;
           &:hover {
             color: $primaryColor;

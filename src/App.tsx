@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
 import {Header} from "./Header/Header";
-import {Main} from "./Main/Main";
+import {Profile} from "./Profile/Profile";
 import {Skills} from "./Skills/Skills";
-import {MyWorks} from "./MyWorks/MyWorks";
+import {Projects} from "./Projects/Projects";
 import {RemoteWork} from './RemoteWork/RemoteWork';
 import {Contacts} from "./Contacts/Contacts";
 import {Footer} from "./Footer/Footer";
@@ -15,9 +15,9 @@ export function App() {
                 <Header/>
             </header>
             <body>
-                <Main/>
+                <Profile/>
                 <Skills/>
-                <MyWorks/>
+                <Projects/>
                 <RemoteWork/>
                 <Contacts/>
             </body>

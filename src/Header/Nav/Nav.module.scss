@@ -1,5 +1,5 @@
-@import "src/common/Styles/sass/variables";
-@import "src/common/Styles/sass/mixins.scss";
+@import "../../common/Styles/sass/variables";
+@import "../../common/Styles/sass/mixins";
 
 .nav {
   width: 505px;
@@ -16,35 +16,40 @@
     -webkit-box-flex: 0;
   }
 
-  .linkActive {
+  .link_active {
     color: $primaryColor;
   }
 
   a {
     display: block;
-    vertical-align: middle;
-    letter-spacing: 0;
     position: relative;
+    vertical-align: middle;
+
+    letter-spacing: 0;
     padding: 0 10px;
     z-index: 1;
     @include textStyle(600, 15px, $bgColor, 70px);
 
     &::before {
-      background-color: #dc3545;
+      content: "";
+      background-color: $primaryColor;
+
       top: 50%;
       margin-top: -1px;
-      content: "";
+
       height: 3px;
+      width: 0;
       right: 0;
       position: absolute;
+
       -webkit-transition: all .3s ease 0s;
       -o-transition: all .3s ease 0s;
       transition: all .3s ease 0s;
-      width: 0;
+
     }
 
     &:hover {
-      color: #dc3545;
+      color: $primaryColor;
     }
 
     &:hover::before {
@@ -55,12 +60,12 @@
 
     a:focus:active {
       background: none;
-      color: #dc3545;
+      color: $primaryColor;
     }
   }
 }
 
-.navSticky {
+.nav_sticky {
   a {
     color: $textColor;
   }

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import s from './Nav.module.scss'
+import s from "./Nav.module.scss";
 
 
 export const Nav = () => {
@@ -18,8 +18,8 @@ export const Nav = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [scroll]);
 
-    return (<div className={scroll ? `${s.navSticky} ${s.nav}`: s.nav}>
-        <a className={s.linkActive} href={''}>Main</a>
+    return (<div className={scroll ? `${s.nav_sticky} ${s.nav}`: s.nav}>
+        <a className={s.link_active} href={''}>Main</a>
         <a href={''}>Skills</a>
         <a href={''}>Projects</a>
         <a href={''}>Remote Work</a>
