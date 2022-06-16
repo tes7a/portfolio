@@ -6,8 +6,8 @@ import sleep from "../assets/image/sleep.svg";
 import code from "../assets/image/programming-code-signs.svg";
 import repeat from "../assets/image/repeat.svg";
 import {ParticleComponent} from "../common/components/tsparticle/ParticleComponent";
-import ReactTypingEffect from "react-typing-effect";
 import {BurgerMenu} from "./BurgerMenu/BurgerMenu";
+import ReactTypingEffect from "react-typing-effect";
 
 export const Header = () => {
     const [scroll, setScroll] = useState(false);
@@ -45,7 +45,7 @@ export const Header = () => {
         </div>
         <div className={s.name_surname_block}>
             <h1>Konstantine <span>Dudkin</span></h1>
-            <ReactTypingEffect eraseDelay={3000} speed={300} className={s.typing_effect} text={"Frontend Developer"}/>
+            <ReactTypingEffect eraseDelay={300} speed={300} className={s.typing_effect} text={"Frontend Developer"}/>
             <ul className={s.header_social}>
                 <li><a href="/#">
                     <i className={`fa-brands fa-facebook ${s.header_social__socials_icons}`}></i>
